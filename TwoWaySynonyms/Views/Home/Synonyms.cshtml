@@ -1,0 +1,51 @@
+﻿@model DbDomain.Models.Synonym
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Synonimy";    
+}
+<div class="container">
+    <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+        <div id="mainData" class="panel  panel-success">            
+            <div id="inputForm" class="panel-heading">
+                <hr />              
+                @using (Ajax.BeginForm(new AjaxOptions
+                {
+                    HttpMethod = "Post",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "synonymList",
+                    OnSuccess = "ajaxSuccess()",
+                    OnBegin = "ajaxBegin()",
+                    OnFailure = "ajaxFailure()"
+                }))
+                {
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+                        <div class="form-group form-horizontal">
+                            @Html.LabelFor(m => m.Term,"Wyrażenie", new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.Term, "Term", new { @class = "form-control col-lg-10", @placeholder = "wpisz wyrażenie" })
+                                @Html.ValidationMessageFor(m => m.Term, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group form-horizontal">
+                            @Html.LabelFor(m => m.Synonyms,"Synonimy", new { @class = "col-md-2 control-label"})
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.Synonyms, "Synonyms", new { @class = "form-control col-md-12", @placeholder = "słowa oddzielone przecinkiem" })
+                                @Html.ValidationMessageFor(m => m.Synonyms, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group form-horizontal">
+                            <div class="col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-6">
+                                <input id="getList" type="button" value="OK" class="btn btn-default" />
+                                <input id="hidenSubmit" type="submit" class="hiden"/>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div id='synonymList' class='panel-body'>
+                @Html.Partial("_SynonymsList", Model)
+            </div>
+        </div>
+    </div>
+</div>

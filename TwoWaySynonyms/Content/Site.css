@@ -1,0 +1,87 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(247, 230, 136, 0.4);
+}
+
+footer {
+    font-family: 'Viner Hand';
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.shadow {
+    text-shadow: 0px 1px 1px black;
+}
+
+.myBtn {
+    width: 100px;
+    color: lightblue;
+}
+.btn{
+    min-width: 90px;
+}
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.jumbotron {
+    background: linear-gradient(green, #4ec845, #89f681);
+    color: lightblue;
+}
+
+    .jumbotron > h1 {
+        font-family: "Bauhaus 93";
+    }
+
+.defaultNavBar {
+    background: linear-gradient(#89f681, #066406, green);
+    margin-top: -54px;
+}
+
+.navbar-default .navbar-brand {
+    color: lightblue;
+    font-family: "Bauhaus 93";
+    font-size: 28px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: lightblue;
+    font-family: "Bauhaus 93";
+    font-size: 16px;
+}
+.hiden{
+    display:none;
+}
+#mainData{
+    border:solid;
+    border-width:1px;
+    border-color: green;
+}
+#synonymList p{
+    color:red;
+    text-decoration:underline;
+}
+mark{
+    background-color: #d4c9c9;
+    border-radius: 4px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+.myMark{    
+    padding-left: 5%;
+    padding-top: 5%;
+}
+#waitInfo{
+    color:white;
+}

@@ -1,0 +1,10 @@
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\DbDomain.dll.config
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\DbDomain.dll
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\DbDomain.pdb
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\EntityFramework.dll
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\EntityFramework.xml
+C:\Users\krzys\Source\Repos\TWS\DbDomain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\krzys\Source\Repos\TWS\DbDomain\obj\Debug\DbDomain.csprojResolveAssemblyReference.cache
+C:\Users\krzys\Source\Repos\TWS\DbDomain\obj\Debug\DbDomain.dll
+C:\Users\krzys\Source\Repos\TWS\DbDomain\obj\Debug\DbDomain.pdb

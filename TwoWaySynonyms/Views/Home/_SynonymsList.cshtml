@@ -1,0 +1,44 @@
+﻿@model DbDomain.ViewModels.SynonymViewModel
+@{
+    string message = ViewBag.Message;
+}
+@if (!String.IsNullOrEmpty(message))
+{
+    <h3 class="alert alert-danger">@message</h3>
+}
+@if (Model != null)
+{
+    if (!Model.IsValid())
+    {
+        <h3 class="alert alert-danger">@Model.Message</h3>
+    }
+    else
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p>@Model.Synonym.Term</p>
+            </div>
+            <div class="panel-body">
+                @foreach (var synonym in Model.SynonymsList)
+                {
+                    <span class="myMark">
+                        <mark>@synonym</mark>
+                    </span>
+                }
+            </div>
+        </div>
+        foreach (var synonym in Model.SynonymsList)
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p>@synonym</p>
+                </div>
+                <div class="panel-body">
+                    <span class="myMark">
+                        <mark>@Model.Synonym.Term</mark>
+                    </span>
+                </div>
+            </div>
+        }
+    }
+}
