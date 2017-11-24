@@ -19,6 +19,8 @@ namespace TwoWaySynonyms.Controllers
             {                
                 ViewBag.Message = message;
                 AuthorizeByPassAttribute.Pass = ""; //Wylogowanie :)
+                if (Request.IsAjaxRequest())
+                    return PartialView(); // Jesli po wylogowaniu próba submit
                 return View();
             }
             catch (Exception ex)
