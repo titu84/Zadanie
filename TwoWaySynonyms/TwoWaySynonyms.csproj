@@ -156,6 +156,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\appScripts.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -206,6 +209,10 @@
     <ProjectReference Include="..\DbDomain\DbDomain.csproj">
       <Project>{1cab0764-f843-40d6-84d5-81b6a683cec7}</Project>
       <Name>DbDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger_ToFile\Logger_ToFile.csproj">
+      <Project>{ed2ca52f-c4cc-4cfe-b8ed-0638121efe12}</Project>
+      <Name>Logger_ToFile</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{2413abb0-d2ed-40da-aa6b-5f7c8d052073}</Project>

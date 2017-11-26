@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbDomain", "DbDomain\DbDoma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{2413ABB0-D2ED-40DA-AA6B-5F7C8D052073}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger_ToFile", "Logger_ToFile\Logger_ToFile.csproj", "{ED2CA52F-C4CC-4CFE-B8ED-0638121EFE12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2413ABB0-D2ED-40DA-AA6B-5F7C8D052073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2413ABB0-D2ED-40DA-AA6B-5F7C8D052073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2413ABB0-D2ED-40DA-AA6B-5F7C8D052073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2CA52F-C4CC-4CFE-B8ED-0638121EFE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2CA52F-C4CC-4CFE-B8ED-0638121EFE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2CA52F-C4CC-4CFE-B8ED-0638121EFE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2CA52F-C4CC-4CFE-B8ED-0638121EFE12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
